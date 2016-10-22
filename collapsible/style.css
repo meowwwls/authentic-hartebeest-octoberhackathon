@@ -35,22 +35,36 @@ ul.collapsible-menu {
 .collapsible-menu label {
   display: block;
   cursor: pointer;
+  padding: 0 1rem;
+  -webkit-transition: all 0.35s ease-in-out;
   transition: all 0.35s ease-in-out;
-  padding: 1rem;
-  border-top: 1px solid #999;
-  border-bottom: 1px solid #999;
-  line-height: 40px;
+}
+
+.collapsible-menu i {
+  width: 2rem;
+  display: inline-block;
+  margin-right: 1rem;
+  font-size: 1.6rem;
 }
 
 .collapsible-menu .material-icons,
 .collapsible-menu span {
-  line-height: 40px;
+  line-height: 3rem;
   vertical-align: middle;
 }
 
 .collapsible-menu li {
   position: relative;
   margin: 0;
+  padding: 0;
+}
+
+.collapsible-menu li:not(:first-of-type) {
+  border-top: 1px solid #ddd;
+}
+
+.collapsible-menu li:not(:last-of-type) {
+  border-bottom: 1px solid #ddd;
 }
 
 .collapsible-menu .menu-item-wrapper {
@@ -58,7 +72,9 @@ ul.collapsible-menu {
   visibility: hidden;
   opacity: 0;
   height: 0;
-  transform: translateY(25%);
+  -webkit-transform: translateY(25%);
+          transform: translateY(25%);
+  -webkit-transition: all 0.35s ease-in-out;
   transition: all 0.35s ease-in-out;
   overflow: hidden;
 }
@@ -72,10 +88,11 @@ ul.collapsible-menu {
   visibility: visible;
   opacity: 1;
   height: 100%;
-  transform: translateY(0);
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
-input:focus + label {
+.collapsible-menu input:checked + label {
   background: #333;
   color: #ccc;
 }
