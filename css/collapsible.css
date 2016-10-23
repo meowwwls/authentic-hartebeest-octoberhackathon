@@ -149,15 +149,15 @@ ul.collapsible-menu {
 }
 
 .collapsible-menu input:checked + label + .menu-item-wrapper.sm-item {
-  height: 8.75rem;
+  height: 8.75em;
 }
 
 .collapsible-menu input:checked + label + .menu-item-wrapper.md-item {
-  height: 18.75rem;
+  height: 18.75em;
 }
 
 .collapsible-menu input:checked + label + .menu-item-wrapper.lg-item {
-  height: 34rem;
+  height: 32em;
 }
 
 .collapsible-menu input:checked + label {
