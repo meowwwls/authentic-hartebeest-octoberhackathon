@@ -19,7 +19,7 @@ body {
 
 .modal-wrapper {
   position: absolute;
-  left: 5%;
+  left: 10%;
   top: 15%;
   width: 100%;
 }
@@ -49,7 +49,7 @@ a {
   display: block;
   text-decoration: none;
   text-transform: uppercase;
-  width: 20%;
+  width: 10%;
   height: 2.5rem;
   line-height: 2.5rem;
   background-color: #26A69A;
