@@ -32,6 +32,7 @@ ul.collapsible-menu {
   width: 0;
   height: 0;
   position: absolute;
+  pointer-events: none;
 }
 
 .collapsible-menu label {
@@ -87,11 +88,7 @@ ul.collapsible-menu {
 }
 
 .collapsible-menu li:not(:first-of-type) {
-  border-top: 1px solid #ddd;
-}
-
-.collapsible-menu li:not(:last-of-type) {
-  border-bottom: 1px solid #ddd;
+  box-shadow: 0 -1px 0 #ddd;
 }
 
 .collapsible-menu .menu-item-wrapper {
