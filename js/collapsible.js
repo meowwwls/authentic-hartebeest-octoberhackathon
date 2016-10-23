@@ -1,4 +1,11 @@
-// this script is just to add the enhancement of the open item being closed if it is clicked while open
+/****
+  This script is just to add the enhancement of an open item being closed when
+  it is clicked a second time. It is only needed if RADIO inputs are used, as checkboxes
+  do this by default.
+  
+  The menu works perfectly fine without this addition just using HTML and CSS.
+****/
+
 var list = document.getElementById('menu');
 var lastClicked = '';
 
