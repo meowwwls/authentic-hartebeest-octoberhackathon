@@ -98,10 +98,6 @@ a {
   box-shadow: 0 3px 3px 3px rgba(0, 0, 0, .14), 0 6px 6px 6px rgba(0, 0, 0, .10);
 }
 
-.popup-wrapper {
-  visibility: hidden;
-}
-
 .popup-wrapper:target {
   visibility: visible;
   pointer-events: auto;
