@@ -28,9 +28,13 @@ h1.hartebeest-demo-heading {
 }
 
 h2.hartebeest-demo-heading {
+  font-weight: 100;
+}
+
+h3.hartebeest-demo-heading {
   border-top: 1px solid #ddd;
   padding-top: 2rem;
-  font-weight: 100;
+  font-weight: 200;
 }
 
 ul.collapsible-menu {
@@ -61,6 +65,10 @@ ul.collapsible-menu {
   padding: 0 1rem;
   -webkit-transition: all 0.35s ease-in-out;
   transition: all 0.35s ease-in-out;
+}
+
+.collapsible-menu label:hover {
+  background: #eee;
 }
 
 .collapsible-menu i {
