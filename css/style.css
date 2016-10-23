@@ -1,3 +1,22 @@
+/* base reset */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0.01rem;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica,  "Lucida Grande", sans-serif; 
+}
+
+html,
+body {
+  height: 100%;
+}
+
+/* text styling */
+
 .hartebeest-demo-heading {
   text-align: center;
   max-width: 43rem;
@@ -14,4 +33,12 @@ h2.hartebeest-demo-heading {
   border-bottom: 1px solid #ddd;
   padding-bottom: 2rem;
   font-weight: 100;
+}
+
+/* menu links styling */
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  margin: 0 10%;
 }
