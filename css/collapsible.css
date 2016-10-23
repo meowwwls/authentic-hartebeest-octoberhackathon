@@ -118,9 +118,20 @@ ul.collapsible-menu {
 .collapsible-menu input:checked + label + .menu-item-wrapper {
   visibility: visible;
   opacity: 1;
-  height: 100%;
   -webkit-transform: translateY(0);
   transform: translateY(0);
+}
+
+.collapsible-menu input:checked + label + .menu-item-wrapper.sm-item {
+  height: 8.75rem;
+}
+
+.collapsible-menu input:checked + label + .menu-item-wrapper.md-item {
+  height: 18.75rem;
+}
+
+.collapsible-menu input:checked + label + .menu-item-wrapper.lg-item {
+  height: 30.7rem;
 }
 
 .collapsible-menu input:checked + label {
