@@ -24,6 +24,25 @@ body {
   width: 100%;
 }
 
+
+.hartebeest-demo-heading {
+  text-align: center;
+  max-width: 43rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1.hartebeest-demo-heading {
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+h2.hartebeest-demo-heading {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 2rem;
+  font-weight: 100;
+}
+
 /* button styles */
 
 a {
