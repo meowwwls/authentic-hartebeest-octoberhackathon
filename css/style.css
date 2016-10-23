@@ -38,12 +38,12 @@ h2.hartebeest-demo-heading {
 /* menu links styling */
 
 .wrapper {
-  width: 80%;
+  width: 90%;
   margin: auto;
 }
 
 a {
   display: inline-block;
   text-decoration: none;
-  margin: 10% 7%;
+  margin: 5% 10%;
 }
