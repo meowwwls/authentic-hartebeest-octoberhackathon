@@ -32,6 +32,7 @@ ul.collapsible-menu {
   width: 0;
   height: 0;
   position: absolute;
+  pointer-events: none;
 }
 
 .collapsible-menu label {
