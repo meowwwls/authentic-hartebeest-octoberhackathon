@@ -48,3 +48,7 @@ a {
   margin: 5% 9%;
   color: #097FF3;
 }
+
+a:hover {
+  color: #F75ED2;
+}
