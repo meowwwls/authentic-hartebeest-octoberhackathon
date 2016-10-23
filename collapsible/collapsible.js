@@ -1,12 +1,17 @@
- var list = document.getElementById('menu');
- 
- // the open class is not used to add styles, just keep track of whether the item is open or closed
+// this script is just to add the enhancement of the open item being closed if it is clicked while open
+var list = document.getElementById('menu');
+var lastClicked = '';
+
 list.addEventListener('click', function(event) {
   if (event.target.nodeName === 'INPUT') {
-    if (event.target.classList.contains('open')) {
+    // if we clicked on the same item twice in a row, it's open; uncheck it
+    if (event.target.classList.contains('open') && event.target === lastClicked) {
       event.target.checked = false;
+      event.target.classList.remove('open');
+  } else {
+    event.target.classList.add('open');
   }
-    // if it was open when we clicked it, remove the open class; otherwise add the open class
-    event.target.classList.toggle('open');
+  // current element = lastClicked so we can check it against the next element clicked
+  lastClicked = event.target;
   }
 }, false);
